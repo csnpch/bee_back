@@ -3,7 +3,7 @@ const Sequelize = require('sequelize');
 const app = express();
 
 app.use(express.json());
-const dbUrl = 'postgres://webadmin:ZAPyqd64144@node51702-beeyah.proen.app.ruk-com.cloud:11539/Books'
+const dbUrl = 'postgres://webadmin:ZAPyqd64144@10.104.11.181:5432/Books'
 const sequelize = new Sequelize(dbUrl) ;
 const Book = sequelize.define('book', {
     id: {
