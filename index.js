@@ -33,7 +33,7 @@ db.run(`CREATE TABLE IF NOT EXISTS Bandalbum (
 
 
 
-app.get('/Band', (req, res) => {
+app.get('/Band', (req, res ) => {
     db.all('SELECT * FROM Band', (err, rows) => {
         if (err) {
             res.status(500).send(err);
