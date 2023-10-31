@@ -2,6 +2,8 @@ const express = require('express');
 const sqlite3 = require('sqlite3');
 const app = express();
 const db = new sqlite3.Database('./Database/Bandtable.sqlite');
+require('dotenv').config()
+
 
 app.use(express.json());
 
